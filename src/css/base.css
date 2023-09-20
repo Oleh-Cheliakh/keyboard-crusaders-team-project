@@ -5,8 +5,9 @@ body {
 }
 
 .container {
-  max-width: 1152px;
-  padding: 0 20px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -57,7 +58,14 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 32px;
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
   }
 
   .section-title-highlighted::after{
@@ -77,6 +85,8 @@ body {
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0;
+    max-width: 1152px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
