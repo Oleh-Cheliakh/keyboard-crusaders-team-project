@@ -11,6 +11,14 @@ body {
   margin-right: auto;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
 .section-title {
   text-align: center;
   font-size: 32px;
