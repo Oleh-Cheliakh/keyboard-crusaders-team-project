@@ -1,23 +1,19 @@
 .section-title {
   font-size: 32px;
   line-height: 1.125;
-  letter-spacing: -0.64px;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 768px) {
   .section-title {
     font-size: 40px;
     line-height: 1.2;
-    letter-spacing: -0.02em;
   }
 }
 
 .teachers {
   text-align: center;
-}
-
-.additional-styles {
-  margin-bottom: 16px;
 }
 
 .section-text {
