@@ -4,73 +4,70 @@
     <p class="section-text">
       Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
     </p>
-  </div>
-  <div class="form-container d-flex gap-32">
-    <div class="form-col preview">
-      <img 
-        class="preview-img" 
-        src="./img/form/form-image.jpg" 
-        srcset="./img/form/form-image.jpg 1x, ./img/form/form-image@2x.jpg 2x"
-        alt="Online English Language Lessons" 
-       />
-      <div class="preview-content">
-        <p class="preview-number">1000</p>
-        <p class="preview-text">
-          of our online English language lessons! This journey has been full of discovery, growth and unforgettable
-          moments,
-          and
-          we are happy to share this joyful event with you.
-        </p>
-      </div>
-    </div>
-    <div class="form-col">
-      <form class="form">
-        <div class="form-item">
-          <input class="form-input" type="text" name="name" placeholder="Name" pattern="\w{3,16}" />
-        </div>
-        <div class="form-item">
-          <input class="form-input" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
-        </div>
-        <div class="form-item">
-          <input class="form-input" type="tel" name="phone" placeholder="Phone" pattern="\d{8,24}"/>
-        </div>
-        <div class="form-item">
-          <textarea class="form-textarea" name="comment" placeholder="Comment" rows="5"></textarea>
-        </div>
-        
-        <div class="form-radio-group">
-          <p class="form-radio-title">
-            Choose a teacher
+    <ul class="d-flex gap-32">
+      <li class="form-col preview">
+        <img class="preview-img" src="./img/form/form-image.jpg"
+          srcset="./img/form/form-image.jpg 1x, ./img/form/form-image@2x.jpg 2x" alt="Online English Language Lessons" />
+        <div class="preview-content">
+          <p class="preview-number">1000</p>
+          <p class="preview-text">
+            of our online English language lessons! This journey has been full of discovery, growth and unforgettable
+            moments,
+            and
+            we are happy to share this joyful event with you.
           </p>
-          <ul class="form-radio-list">
-            <li class="form-radio-list-item">
-              <label for="contact1" class="form-radio">
-                <input type="radio" id="contact1" name="contact" value="Maria"> Maria </label>
-            </li>
-            <li class="form-radio-list-item">
-              <label for="contact2" class="form-radio">
-                <input type="radio" id="contact2" name="contact" value="Artem" /> Artem</label>
-            </li>
-            <li class="form-radio-list-item">
-              <label for="contact3" class="form-radio">
-                <input type="radio" id="contact3" name="contact" value="Ilona" /> Ilona</label>
-            </li>
-            <li >
-              <label for="contact4" class="form-radio">
-                <input type="radio" id="contact4" name="contact" value="Volodymyr" /> Volodymyr</label>
-            </li>
-          </ul>
         </div>
-
-        <button type="submit" class="form-btn">
-          Send
-        </button>
-        
-        <p class="form-policy">
-          By clicking on “Send” button, you agree to our <a href="/">Privacy Policy</a>,
-          and allow Promodo to use this information for marketing purposes.
-        </p>
-      </form>
-    </div>
+      </li>
+      <li class="form-col">
+        <form class="form">
+          <div class="form-item">
+            <input class="form-input" type="text" name="name" placeholder="Name" pattern="\w{3,16}" />
+          </div>
+          <div class="form-item">
+            <input class="form-input" type="email" name="email" placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          </div>
+          <div class="form-item">
+            <input class="form-input" type="tel" name="phone" placeholder="Phone" pattern="\d{8,24}" />
+          </div>
+          <div class="form-item">
+            <textarea class="form-textarea" name="comment" placeholder="Comment" rows="5"></textarea>
+          </div>
+    
+          <div class="form-radio-group">
+            <p class="form-radio-title">
+              Choose a teacher
+            </p>
+            <ul class="form-radio-list">
+              <li class="form-radio-list-item">
+                <label for="contact1" class="form-radio">
+                  <input type="radio" id="contact1" name="contact" value="Maria"> Maria </label>
+              </li>
+              <li class="form-radio-list-item">
+                <label for="contact2" class="form-radio">
+                  <input type="radio" id="contact2" name="contact" value="Artem" /> Artem</label>
+              </li>
+              <li class="form-radio-list-item">
+                <label for="contact3" class="form-radio">
+                  <input type="radio" id="contact3" name="contact" value="Ilona" /> Ilona</label>
+              </li>
+              <li>
+                <label for="contact4" class="form-radio">
+                  <input type="radio" id="contact4" name="contact" value="Volodymyr" /> Volodymyr</label>
+              </li>
+            </ul>
+          </div>
+    
+          <button type="submit" class="form-btn">
+            Send
+          </button>
+    
+          <p class="form-policy">
+            By clicking on “Send” button, you agree to our <a href="/">Privacy Policy</a>,
+            and allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </li>
+    </ul>
   </div>
 </div>
