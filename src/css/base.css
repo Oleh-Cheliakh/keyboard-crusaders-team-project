@@ -19,9 +19,8 @@ body {
   letter-spacing: -0.02em;
 }
 
-.section-text {
+p.section-text {
   text-align: center;
-  max-width: 335px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
@@ -119,8 +118,7 @@ body {
     bottom: 0;
   }
 
-  .section-text {
-    max-width: 665px;
+  p.section-text {
     margin-bottom: 64px;
     margin-right: auto;
     margin-left: auto;
