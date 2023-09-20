@@ -75,7 +75,7 @@
 }
 @media only screen and (min-width: 768px) {
   .small-text-teacher {
-    max-width: 272px;
+    width: 272px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -85,4 +85,23 @@
   .small-text-teacher {
     width: 232px;
   }
+}
+
+.section-title-highlighted {
+  position: relative;
+}
+
+.section-title-highlighted::before {
+  content: '';
+  position: absolute;
+
+  bottom: -1px;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+
+  width: calc(100% + 10px);
+  height: 20px;
+  border-radius: 8px;
+  background-color: #bee8cc;
 }
