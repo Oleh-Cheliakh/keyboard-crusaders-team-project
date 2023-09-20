@@ -1,2 +1,138 @@
-.header-section {
+.header {
+  @media screen and (max-width: 1279px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+  }
+}
+
+.header + main {
+  @media screen and (max-width: 1279px) {
+    padding-top: 68px;
+  }
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+
+  @media screen and (max-width: 1279px) {
+    height: 68px;
+    align-items: center;
+  }
+}
+
+.header-nav {
+  display: flex;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.header-nav .nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav .nav-link:hover::after {
+  width: 37px;
+}
+
+.logo {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.36;
+}
+
+.logo > .span {
+  color: var(--green);
+}
+
+.header-networks {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: unset;
+    font-style: normal;
+  }
+}
+
+.header-networks-list {
+  display: flex;
+  gap: 12px;
+}
+
+.networks-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1214171a;
+  border-radius: 10px;
+  color: var(--black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.networks-link svg {
+  fill: currentColor;
+}
+
+.networks-link:hover,
+.networks-link:focus {
+  color: var(--green);
+  border-color: #4dc2741a;
+}
+
+.mobile-menu-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: var(--black);
+
+  background-color: red;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile-menu-button svg {
+  fill: currentColor;
 }
