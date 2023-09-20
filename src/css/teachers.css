@@ -13,6 +13,13 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .container {
+    padding: 0;
+    max-width: 1280px;
+  }
+}
+
 .teachers {
   text-align: center;
 }
@@ -34,7 +41,7 @@
     font-size: 18px;
     line-height: 1.66;
     margin-bottom: 64px;
-    max-width: 709px;
+    width: 709px;
   }
 }
 
