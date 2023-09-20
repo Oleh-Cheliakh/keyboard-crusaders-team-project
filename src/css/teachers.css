@@ -20,6 +20,20 @@
   }
 }
 
+.section-title {
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.64px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
 .teachers {
   text-align: center;
 }
@@ -66,24 +80,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.teachers-item {
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.teacher-first {
-  /* background-color: */
-}
-.teacher-second {
-  background-color: #d4b2af;
-}
-.teacher-third {
-  background-color: #dfcc9f;
-}
-.teacher-fourth {
-  background-color: #d1dfc3;
 }
 
 .subtitle {
