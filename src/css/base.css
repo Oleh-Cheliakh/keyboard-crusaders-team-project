@@ -13,9 +13,35 @@ body {
 }
 
 .section-title {
+  text-align: center;
   font-size: 32px;
   line-height: 1.125;
   letter-spacing: -0.02em;
+}
+
+.section-text {
+  text-align: center;
+  max-width: 335px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+/* Highlighted title */
+.section-title-highlighted {
+  position: relative;
+}
+
+.section-title-highlighted::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  height: 12px;
+  border-radius: 8px;
+  left: 0;
+  width: 100%;
+  background-color: var(--rectangle-green);
+  z-index: -999;
 }
 
 /* Hidden elements */
@@ -86,6 +112,20 @@ body {
     font-size: 18px;
     padding: 16px 0;
     line-height: 1.56;
+  }
+
+  .section-title-highlighted::after {
+    height: 20px;
+    bottom: 0;
+  }
+
+  .section-text {
+    max-width: 665px;
+    margin-bottom: 64px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
 
