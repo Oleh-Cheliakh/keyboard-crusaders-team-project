@@ -5,10 +5,12 @@
     left: 0;
     right: 0;
     background-color: var(--white);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   }
 }
 
-.header + main {
+.header ~ main {
   @media screen and (max-width: 1279px) {
     padding-top: 68px;
   }
@@ -27,8 +29,6 @@
 }
 
 .header-nav {
-  display: flex;
-
   @media screen and (max-width: 1279px) {
     display: none;
   }
@@ -75,11 +75,6 @@
   @media screen and (max-width: 1279px) {
     display: none;
   }
-
-  @media screen and (min-width: 1280px) {
-    display: unset;
-    font-style: normal;
-  }
 }
 
 .header-networks-list {
@@ -122,8 +117,6 @@
   cursor: pointer;
   color: var(--black);
 
-  background-color: red;
-
   @media screen and (min-width: 768px) {
     width: 40px;
   }
@@ -134,5 +127,5 @@
 }
 
 .mobile-menu-button svg {
-  fill: currentColor;
+  stroke: currentColor;
 }
