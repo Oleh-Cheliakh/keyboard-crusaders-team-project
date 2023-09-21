@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   color: var(--black);
@@ -5,30 +9,45 @@ body {
 }
 
 .container {
-  max-width: 1152px;
-  padding: 0 20px;
+  max-width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    padding: 0;
-  }
-}
-
 .section-title {
+  text-align: center;
   font-size: 32px;
   line-height: 1.125;
-  letter-spacing: -0.64px;
+  letter-spacing: -0.02em;
 }
 
+p.section-text {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+/* Highlighted title */
+.section-title-highlighted {
+  position: relative;
+}
+
+.section-title-highlighted::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  height: 12px;
+  border-radius: 8px;
+  left: 0;
+  width: 100%;
+  background-color: var(--rectangle-green);
+  z-index: -999;
+}
+
+/* Hidden elements */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -40,4 +59,83 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* Buttons */
+.button {
+  border-radius: 12px;
+  padding: 14px 0;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  transition: background-color var(--trns-fast);
+}
+
+.button-primary {
+  background-color: var(--green);
+  border: none;
+  transition: background-color var(--trns-fast);
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 1px solid #ffffff66;
+  transition: background-color var(--trns-fast),
+    color var(--trns-fast);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background-color: var(--dark-green);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 16px 0;
+    line-height: 1.56;
+  }
+
+  .section-title-highlighted::after {
+    height: 20px;
+    bottom: 0;
+  }
+
+  p.section-text {
+    margin-bottom: 64px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1152px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
