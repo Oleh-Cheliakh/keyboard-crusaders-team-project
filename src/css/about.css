@@ -13,8 +13,6 @@
 }
 
 .about-container {
-  display: flex;
-  gap: 32px;
   min-width: 280px;
   margin: 0 auto;
 }
@@ -33,26 +31,14 @@
 
 .about-list {
   display: grid;
-  padding: 0;
-  margin: 0;
 
   counter-reset: item;
-  list-style-type: none;
-
   grid-template-columns: 100%;
   grid-template-rows: 160px 160px 160px 160px 313px;
   gap: 20px;
 }
 @media only screen and (min-width: 768px) {
   .about-list {
-    width: 704px;
-    padding: 0;
-    margin: 0;
-
-    counter-reset: item;
-    list-style-type: none;
-
-    display: grid;
     grid-template-columns: 336px 336px;
     grid-template-rows: 160px 160px 243px;
     gap: 32px;
@@ -60,14 +46,6 @@
 }
 @media only screen and (min-width: 1280px) {
   .about-list {
-    width: 682px;
-    padding: 0;
-    margin: 0;
-
-    counter-reset: item;
-    list-style-type: none;
-
-    display: grid;
     grid-template-columns: 325px 325px 310px;
     grid-template-rows: 160px 160px;
     gap: 32px;
@@ -108,7 +86,7 @@
 }
 
 .about-item:nth-child(n + 10)::before {
-  content: "0" counter(item);
+  content: counter(item);
 }
 
 .about-item::before {
@@ -117,9 +95,8 @@
 
   color: var(--green);
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: -0.02em;
 
   content: "0" counter(item);
