@@ -19,8 +19,7 @@
         max-width: 1152px;
         padding-left: 64px;
         padding-right: 64px;
-        padding: 54px;
-        /* padding-bottom: 142px; */
+        padding-bottom: 142px;
     }
 }
 
@@ -52,6 +51,7 @@
         line-height: 1.17;
         font-size: 60px;
         font-weight: 700;
+        padding-bottom: 72px;
         /* width: 776px; */
         /* margin-bottom: 133px; */
     }
@@ -256,10 +256,19 @@
     border-radius: 12px;
     background: #4DC274;
 
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.71;
+
     @media screen and (min-width: 768px) {
         display: inline-flex;
         padding: 16px 64px;
         width: auto;
+        font-size: 18px;
+        line-height: 1.56;
 
     }
 
@@ -267,10 +276,13 @@
         display: inline-flex;
         padding: 16px 64px;
         width: auto;
+
+        font-size: 18px;
+        line-height: 1.56;
     }
 }
 
-.offer-link {
+/* .offer-link {
     color: #FFF;
     font-family: Manrope;
     font-size: 14px;
@@ -289,4 +301,4 @@
         font-size: 18px;
         line-height: 1.56;
     }
-}
+} */
