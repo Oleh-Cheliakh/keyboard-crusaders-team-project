@@ -1,1 +1,69 @@
-<p>form</p>
+<section id="application" class="form-section">
+  <div class="container">
+    <h2 class="section-title">Leave an <span class="section-title-highlighted">application</span></h2>
+    <p class="section-text">
+      Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.
+    </p>
+    <div class="form-section-list">
+      <div class="form-col preview">
+        <img class="preview-img" src="./img/form/form-image.jpg"
+          srcset="./img/form/form-image.jpg 1x, ./img/form/form-image@2x.jpg 2x" alt="Online English Language Lessons" />
+        <div class="preview-content">
+          <p class="preview-number">1000</p>
+          <p class="preview-text">
+            of our online English language lessons! This journey has been full of discovery, growth and unforgettable
+            moments,
+            and
+            we are happy to share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <div class="form-col">
+        <form class="form">
+          <div class="form-item">
+            <input class="form-input" type="text" name="name" placeholder="Name" pattern="\w{3,16}" aria-label="Name"/>
+          </div>
+          <div class="form-item">
+            <input class="form-input" type="email" name="email" placeholder="Email" aria-label="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+          </div>
+          <div class="form-item">
+            <input class="form-input" type="tel" name="phone" placeholder="Phone" pattern="\d{8,24}" aria-label="Phone"/>
+          </div>
+          <div class="form-item">
+            <textarea class="form-textarea" name="comment" placeholder="Comment" rows="5" aria-label="Comment"></textarea>
+          </div>
+    
+          <fieldset class="form-radio-group">
+            <legend class="form-radio-title">Choose a teacher</legend>
+            <div class="form-radio-list">
+              <label for="contact1" class="form-radio">
+                <input type="radio" id="contact1" name="contact" value="Maria"> Maria </label>
+            </div>
+            <div class="form-radio-list">
+              <label for="contact2" class="form-radio">
+                <input type="radio" id="contact2" name="contact" value="Artem" /> Artem</label>
+            </div>
+            <div class="form-radio-list">
+              <label for="contact3" class="form-radio">
+                <input type="radio" id="contact3" name="contact" value="Ilona" /> Ilona</label>
+            </div>
+            <div class="form-radio-list">
+              <label for="contact4" class="form-radio">
+                <input type="radio" id="contact4" name="contact" value="Volodymyr" /> Volodymyr</label>
+            </div>
+          </fieldset>
+    
+          <button type="submit" class="form-btn button button-primary">
+            Send
+          </button>
+    
+          <p class="form-policy">
+            By clicking on “Send” button, you agree to our <a href="/">Privacy Policy</a>,
+            and allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
