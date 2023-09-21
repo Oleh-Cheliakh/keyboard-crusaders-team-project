@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', sans-serif;
   color: var(--black);
@@ -65,20 +69,20 @@ p.section-text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--trns-fast);
 }
 
 .button-primary {
   background-color: var(--green);
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--trns-fast);
 }
 
 .button-secondary {
   background-color: transparent;
   border: 1px solid #ffffff66;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--trns-fast),
+    color var(--trns-fast);
 }
 
 .button-primary:hover,
