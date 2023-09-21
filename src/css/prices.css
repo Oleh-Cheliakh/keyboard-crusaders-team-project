@@ -1,2 +1,111 @@
 .prices-section {
+  margin-bottom: 80px;
+}
+
+/* List container */
+.prices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Title of a card */
+.prices-list .list-item-title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+/* Price number */
+.prices-list .list-item-price {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  line-height: 1.125;
+}
+
+/* Description of a card */
+.prices-list .list-item-text {
+  color: var(--light-gray);
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.prices-list .button {
+  width: 100%;
+  display: block;
+}
+
+/* Card */
+.prices-list .list-item {
+  border-radius: 16px;
+  padding: 40px 21px 40px 20px;
+}
+
+.prices-list .list-item:not(:nth-child(2n)) {
+  border: 1px solid var(--green);
+}
+
+.prices-list .list-item:nth-child(2n) {
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.prices-list .list-item:nth-child(2n) > .list-item-text {
+  color: var(--light-white);
+}
+
+@media screen and (max-width: 767px) {
+  .prices-list .list-item-text {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .prices-section {
+    margin-bottom: 100px;
+  }
+
+  .prices-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .prices-list .list-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .prices-list .list-item-price {
+    margin-bottom: 32px;
+    line-height: 1.375;
+  }
+
+  .prices-list .list-item-text {
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+}
+
+/* Dektop */
+
+@media screen and (min-width: 1280px) {
+  .prices-section {
+    margin-bottom: 150px;
+  }
+
+  .prices-list .list-item-price {
+    margin-bottom: 16px;
+  }
+
+  .prices-list .list-item {
+    flex-basis: calc((100% - 64px) / 3);
+  }
 }
