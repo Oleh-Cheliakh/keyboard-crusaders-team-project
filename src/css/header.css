@@ -53,7 +53,7 @@
   width: 0;
   height: 2px;
   background-color: var(--green);
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width var(--trns-fast);
 }
 
 .header-nav .nav-link:hover::after {
@@ -62,9 +62,8 @@
 
 .logo {
   color: var(--black);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 1.36;
 }
 
 .logo > .span {
@@ -91,8 +90,7 @@
   border: 1px solid #1214171a;
   border-radius: 10px;
   color: var(--black);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--trns-fast), border-color var(--trns-fast);
 }
 
 .networks-link svg {
