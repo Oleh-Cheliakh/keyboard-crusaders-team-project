@@ -54,7 +54,7 @@
   flex-direction: column;
 }
 .form-section .preview .preview-text{
-  color: rgba(255, 255, 255, 0.70);
+  color: var(--light-white);
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
@@ -66,7 +66,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 }
 
 
@@ -81,13 +81,13 @@
   width: 100%;
   border-radius: 12px;
   border: 1px solid rgba(18, 20, 23, 0.10);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--trns-fast);
 
-  color: var(--black);
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.29;
   @media (min-width: 768px) {
     font-size: 16px;
+    line-height: 1.5;
   }
 }
 
@@ -129,15 +129,15 @@
 
 
 .form-section .form-radio-group .form-radio-title{ 
-  color: var(--black);
   font-size: 18px;
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
   margin-bottom: 14px;
   @media(min-width: 768px) {
     font-size: 20px;
     margin-bottom: 16px;
+    line-height: 1.2;
   }
 }
 
@@ -160,45 +160,24 @@
   
   display: flex;
   align-items: center;
-  color: var(--black);
   text-align: center;
   font-size: 14px;
   line-height: 1.33;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   @media(min-width: 768px) {
     font-size: 18px;
+    line-height: 1.33;
   }
 }
 
 
 .form-section .form-btn {
-  background-color: var(--green);
-  border: none;
-  border-radius: 12px;
-  color: var(--white);
-  padding: 14px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 40px;
 
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.71;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media(min-width: 768px) {
-    padding: 16px;
+  @media(min-width: 428px) {
     margin-top: 32px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5;
   }
-}
-.form-section .form-btn:focus,
-.form-section .form-btn:hover  { 
-  background-color: #38AE5F;
 }
 
 .form-section .form-policy {
@@ -218,7 +197,7 @@
 
 
 .form-section input[type="radio"] {
-  
+
   -webkit-appearance: none;
   appearance: none;
   background-color: #fff;
