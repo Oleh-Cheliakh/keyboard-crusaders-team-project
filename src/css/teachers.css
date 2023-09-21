@@ -15,7 +15,7 @@
 
 @media only screen and (min-width: 1280px) {
   .teachers {
-    margin-bottom: 144px;
+    margin-bottom: 150px;
   }
 }
 
@@ -23,12 +23,6 @@
   color: rgba(18, 20, 23, 0.5);
   font-size: 14px;
   line-height: 1.71;
-}
-
-@media only screen and (min-width: 1280px) {
-  .section-text {
-    width: 709px;
-  }
 }
 
 .teachers-card {
