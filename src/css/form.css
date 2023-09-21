@@ -92,6 +92,7 @@
 }
 
 
+
 .form-section .form-input::placeholder,
  .form-section .form-textarea::placeholder{ 
   color: var(--black);
@@ -119,12 +120,7 @@
     }
 }
 
-.form-section .form-input { 
-  height: 50px;
-  @media(min-width: 768px) {
-    height: 56px;
-  }
-}
+
 
 
 
@@ -181,7 +177,7 @@
 }
 
 .form-section .form-policy {
-  color: rgba(18, 20, 23, 0.50);
+  color: var(--light-gray);
   font-size: 12px;
   line-height: 1.33;
   margin-top: 16px;
