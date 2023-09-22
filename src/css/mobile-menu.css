@@ -8,8 +8,10 @@
   z-index: 99;
   background-color: transparent;
   transition: background-color var(--trns-fast);
+}
 
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+  .mobile-menu-backdrop {
     display: none;
   }
 }
@@ -34,8 +36,10 @@
   transform: translateX(100%);
   background-color: var(--green);
   transition: transform var(--trns-fast);
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .mobile-menu-box {
     width: 384px;
     padding: 20px 32px 32px 32px;
   }
@@ -58,8 +62,10 @@
   cursor: pointer;
   color: var(--white);
   transition: color var(--trns-fast);
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .close-modal {
     width: 40px;
     height: 40px;
   }
@@ -71,8 +77,10 @@
 
 .close-modal svg {
   stroke: currentColor;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .close-modal svg {
     width: 40px;
     height: 40px;
   }
