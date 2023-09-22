@@ -19,6 +19,7 @@
 .form-section .preview .preview-img {
   width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 .form-section .preview-content {
