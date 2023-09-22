@@ -1,17 +1,17 @@
 .offer {
-  padding-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) {
-  .offer {
-    padding-bottom: 100px;
-  }
+    .offer {
+        padding-bottom: 100px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-  .offer {
-    padding-bottom: 150px;
-  }
+    .offer {
+        padding-bottom: 150px;
+    }
 }
 
 .offer-section {
@@ -217,8 +217,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
     .offer-img {
-        right: -90px;
-        top: 70%;
+        right: -60px;
+        top: 63%;
     }
 }
 
