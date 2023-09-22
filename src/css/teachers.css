@@ -4,18 +4,18 @@
 
 .teachers {
   text-align: center;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
   .teachers {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .teachers {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }
 

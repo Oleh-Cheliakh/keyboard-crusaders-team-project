@@ -1,5 +1,5 @@
 .prices-section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 /* List container */
@@ -70,7 +70,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
   .prices-section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .prices-list {
@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 1280px) {
   .prices-section {
-    margin-bottom: 150px;
+    padding-bottom: 80px;
   }
 
   .prices-list .list-item-price {
