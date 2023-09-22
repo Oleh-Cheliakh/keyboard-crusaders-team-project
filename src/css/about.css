@@ -57,7 +57,7 @@
   background-color: var(--green);
   border-radius: 30px;
 
-  background-image: url('../img/about/memoji.png');
+  background-image: url('../img/about/memoji.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 255px 173px;
@@ -80,7 +80,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .about-list::after {
-    background-image: url('../img/about/memoji@2x.png');
+    background-image: url('../img/about/memoji@2x.webp');
   }
 }
 

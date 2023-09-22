@@ -52,7 +52,7 @@
 }
 
 .prices-list .list-item:nth-child(2n) {
-  border: none;
+  border: 1px solid transparent;
   background-color: var(--green);
   color: var(--white);
 }
