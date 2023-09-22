@@ -1,2 +1,115 @@
 .about-section {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .about-section {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-section {
+    margin-bottom: 150px;
+  }
+}
+
+.about-container {
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-container {
+    width: 704px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-container {
+    width: 1024px;
+  }
+}
+
+.about-list {
+  display: grid;
+
+  counter-reset: item;
+  grid-template-columns: 100%;
+  grid-template-rows: 160px 160px 160px 160px 313px;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .about-list {
+    grid-template-columns: 336px 336px;
+    grid-template-rows: 160px 160px 243px;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-list {
+    grid-template-columns: 325px 325px 310px;
+    grid-template-rows: 160px 160px;
+    gap: 32px;
+  }
+}
+
+.about-list::after {
+  content: '';
+  display: block;
+  background-color: var(--green);
+  border-radius: 30px;
+
+  background-image: url('../img/about/memoji.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 255px 173px;
+}
+@media only screen and (min-width: 768px) {
+  .about-list::after {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .about-list::after {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+  }
+}
+
+@media only screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .about-list::after {
+    background-image: url('../img/about/memoji@2x.png');
+  }
+}
+
+.about-item:nth-child(n + 10)::before {
+  content: counter(item);
+}
+
+.about-item::before {
+  display: block;
+  margin-bottom: 16px;
+
+  color: var(--green);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  content: '0' counter(item);
+  counter-increment: item;
+}
+
+.about-item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  padding: 32px;
+
+  border-radius: 30px;
+  background-color: var(--gray);
 }
