@@ -28,7 +28,6 @@
   }
 }
 
-
 .about-list {
   display: grid;
 
@@ -53,12 +52,12 @@
 }
 
 .about-list::after {
-  content: "";
+  content: '';
   display: block;
   background-color: var(--green);
   border-radius: 30px;
 
-  background-image: url("../img/about/memoji.png");
+  background-image: url('../img/about/memoji.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 255px 173px;
@@ -78,10 +77,10 @@
 }
 
 @media only screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .about-list::after {
-    background-image: url("../img/about/memoji@2x.png");
+    background-image: url('../img/about/memoji@2x.png');
   }
 }
 
@@ -99,7 +98,7 @@
   line-height: 1.14;
   letter-spacing: -0.02em;
 
-  content: "0" counter(item);
+  content: '0' counter(item);
   counter-increment: item;
 }
 
