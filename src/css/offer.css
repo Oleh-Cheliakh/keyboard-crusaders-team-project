@@ -1,3 +1,19 @@
+.offer {
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offer {
+    padding-bottom: 150px;
+  }
+}
+
 .offer-section {
     margin: 0 auto;
     border-radius: 30px;
@@ -5,7 +21,6 @@
     min-height: 300px;
     padding: 40px 20px 64px;
     width: 100%;
-    margin-bottom: 150px;
 }
 
 @media screen and (min-width: 768px) {
