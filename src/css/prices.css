@@ -98,7 +98,11 @@
 
 @media screen and (min-width: 1280px) {
   .prices-section {
-    padding-bottom: 80px;
+    padding-bottom: 150px;
+  }
+
+  .prices-section .container {
+    max-width: 1152px;
   }
 
   .prices-list .list-item-price {
