@@ -134,7 +134,7 @@ p.section-text {
 /* Desktop */
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1152px;
+    max-width: 1280px;
     padding-left: 64px;
     padding-right: 64px;
   }

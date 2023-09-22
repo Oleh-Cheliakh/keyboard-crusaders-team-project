@@ -1,85 +1,61 @@
 .offer-section {
     position: relative;
-    z-index: -2;
+    /* z-index: -2; */
     margin: 0 auto;
     border-radius: 30px;
-    background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+    background: var(--green_linear);
     min-height: 300px;
-    padding: 16px;
-    padding-bottom: 40px;
+    padding: 40px 20px 64px;
     width: 100%;
     margin-bottom: 150px;
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
-        /* padding-bottom: 142px; */
+        padding: 64px 32px 92px;
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1152px;
-        padding-left: 64px;
-        padding-right: 64px;
-        padding-bottom: 142px;
+        padding: 64px 64px 142px;
+
     }
 }
 
 
 .offer-title {
 
-    color: #FFF;
-    font-family: Manrope;
+    color: var(--white);
     font-size: 38px;
     line-height: 1.05;
-    /* width: 295px; */
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 65px;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
         line-height: 1.17;
         font-size: 60px;
-        /* width: 640px; */
-        /* margin-bottom: 133px; */
+        margin-bottom: 83px;
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1152px;
-        padding-left: 64px;
-        padding-right: 64px;
+        max-width: 768px;
         line-height: 1.17;
         font-size: 60px;
         font-weight: 700;
-        padding-bottom: 72px;
-        /* width: 776px; */
-        /* margin-bottom: 133px; */
+        margin-bottom: 130px;
     }
 }
 
 .offer-subtitle-accent {
-    color: #BEE8CC;
-    /* font-family: Manrope;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1.16; */
+    color: var(--rectangle-green);
 }
 
 .offer-section .offer-wrapper {
     display: flex;
     align-items: center;
-    /* align-items: flex-start; */
     position: relative;
-    /* height: 471px; */
-    /* padding: 64px; */
-    background-color: #FFF;
+    background-color: var(--white);
     border-radius: 30px;
     padding: 40px 20px;
 
-
-    /* width: 1024px;
-    height: 471px;
-    flex-shrink: 0; */
     @media screen and (min-width: 768px) {
         max-width: 768px;
         padding-left: 32px;
@@ -109,37 +85,14 @@
 
     width: 100%;
     height: 100%;
-    background: #D4FDE1;
+    background: var(--light-green);
     border-radius: 30px;
-
-    /* width: 1050px; */
-    /* height: 463px; */
-    /* flex-shrink: 0; */
-    /* @media screen and (min-width: 768px) {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        max-width: 1152px;
-        padding-left: 64px;
-        padding-right: 64px;
-
-    } */
-
 }
 
 
 .offer-section .offer-wrapper::after {
     background: rgba(255, 255, 255, 0.50);
     transform: translate(-50%, -50%) rotate(11deg);
-
-    /* width: 1011px;
-    height: 402px;
-    transform: rotate(11deg);
-    flex-shrink: 0; */
 }
 
 .offer-container-wrapper {
@@ -147,10 +100,8 @@
 }
 
 .offer-subtitle {
-    color: #121417;
-    font-family: Manrope;
+    color: var(--black);
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -167,6 +118,7 @@
         font-size: 40px;
         padding-bottom: 42px;
 
+
     }
 }
 
@@ -178,22 +130,20 @@
     padding-bottom: 39px;
 
     @media screen and (min-width: 768px) {
-        padding-right: 120px;
         padding-left: 0;
+        max-width: 450px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 720px;
+        max-width: 700px;
     }
 
 }
 
 .offer-list-item {
     display: flex;
-    color: #121417;
-    font-family: Manrope;
+    color: var(--black);
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.43;
     letter-spacing: 0.02em;
@@ -254,12 +204,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    background: #4DC274;
+    background: var(--green);
 
-    color: #FFF;
-    font-family: Manrope;
+    color: var(--white);
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.71;
 
@@ -281,24 +229,3 @@
         line-height: 1.56;
     }
 }
-
-/* .offer-link {
-    color: #FFF;
-    font-family: Manrope;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.71;
-
-
-    @media screen and (min-width: 768px) {
-        font-size: 18px;
-        line-height: 1.56;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        font-size: 18px;
-        line-height: 1.56;
-    }
-} */
