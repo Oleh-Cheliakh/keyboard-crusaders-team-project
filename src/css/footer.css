@@ -116,6 +116,7 @@
 .footer-sotial-link:focus .footer-sotial-icon {
     fill: var(--green);
 }
+
 .copyrights {
     display: flex;
     flex-direction: column;
