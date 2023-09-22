@@ -1,5 +1,5 @@
 .form-section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .form-section .form-col {
@@ -162,6 +162,13 @@
 .form-section input[type='radio']:checked::before {
   transform: scale(1);
 }
+.form-policy-link {
+  transition: color var(--trns-fast);
+}
+.form-section .form-policy-link:hover, 
+.form-section .form-policy-link:focus {
+  color: var(--green);
+}
 
 @media (min-width: 428px) {
   .form-section .form-btn {
@@ -171,7 +178,7 @@
 
 @media (min-width: 768px) {
   .form-section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .form-section-list {
@@ -219,7 +226,7 @@
 
 @media (min-width: 1280px) {
   .form-section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 
   .form-section .form-col {
