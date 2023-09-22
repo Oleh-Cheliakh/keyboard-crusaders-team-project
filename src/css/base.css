@@ -21,10 +21,14 @@ body {
   font-size: 32px;
   line-height: 1.125;
   letter-spacing: -0.02em;
+  margin-bottom: 16px;
 }
 
 p.section-text {
   text-align: center;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--light-gray);
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
@@ -69,20 +73,18 @@ p.section-text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.71;
-  transition: background-color var(--trns-fast);
 }
 
 .button-primary {
   background-color: var(--green);
-  border: none;
+  border: 1px solid transparent;
   transition: background-color var(--trns-fast);
 }
 
 .button-secondary {
   background-color: transparent;
   border: 1px solid #ffffff66;
-  transition: background-color var(--trns-fast),
-    color var(--trns-fast);
+  transition: background-color var(--trns-fast), color var(--trns-fast);
 }
 
 .button-primary:hover,
@@ -105,10 +107,8 @@ p.section-text {
   }
 
   .section-title {
-    text-align: center;
     font-size: 40px;
     line-height: 1.2;
-    margin-bottom: 16px;
   }
 
   .button {
@@ -123,9 +123,8 @@ p.section-text {
   }
 
   p.section-text {
+    max-width: 709px;
     margin-bottom: 64px;
-    margin-right: auto;
-    margin-left: auto;
     font-size: 18px;
     line-height: 1.67;
   }
