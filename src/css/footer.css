@@ -108,7 +108,7 @@
     padding: 8px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.10);
-    transition: border var(--trns-fast);
+    transition: outline var(--trns-fast);
 }
 .footer-sotial-icon {
     fill: var(--white);
@@ -117,13 +117,14 @@
 .footer-sotial-link:hover,
 .footer-sotial-link:focus
  {
-    border-color: rgba(77, 194, 116, 0.10);
-}
-.footer-sotial-icon:hover,
-.footer-sotial-icon:focus {
-    fill: var(--green);
+    outline: 2px solid rgba(77, 194, 116, 0.10);
+    outline-offset: -2px;
 }
 
+.footer-sotial-link:hover .footer-sotial-icon,
+.footer-sotial-link:focus .footer-sotial-icon {
+    fill: var(--green);
+}
 .copyrights {
     max-width: 375px;
     display: flex;
