@@ -162,6 +162,13 @@
 .form-section input[type='radio']:checked::before {
   transform: scale(1);
 }
+.form-policy-link {
+  transition: color var(--trns-fast);
+}
+.form-section .form-policy-link:hover, 
+.form-section .form-policy-link:focus {
+  color: var(--green);
+}
 
 @media (min-width: 428px) {
   .form-section .form-btn {
