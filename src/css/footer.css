@@ -2,7 +2,6 @@
     background-color: var(--black);
     padding-top: 40px;
     padding-bottom: 20px;
-    min-width: 320px;
 }
 
 .contacts-container {
@@ -17,7 +16,6 @@
     color: var(--white);
     font-size: 20px;
     font-weight: 700;
-    line-height: normal;
 
     display: block;
     margin-bottom: 20px;
@@ -27,12 +25,8 @@
     color: var(--green);
     font-size: 20px;
     font-weight: 700;
-    line-height: normal;
 }
 
-.contacts {
-    display: block;
-}
 
 .contacts-list {
     display: flex;
@@ -43,7 +37,6 @@
 .contact-text {
     display: block;
     margin-bottom: 4px;
-    margin-top: 0;
 
     color: var(--light-white);
     font-size: 14px;
@@ -53,33 +46,24 @@
     letter-spacing: -0.02em;
     opacity: 0.9;
 }
-
-.footer-contact {
-    color: var(--white);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.29;
-    transition: color var(--trns-fast);
-}
-.footer-contact:hover,
-.footer-contact:focus {
-    color: var(--green);
-}
-.footer-nav-list {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-}
-
 .footer-nav-item {
     color: var(--white);
     font-size: 14px;
     font-weight: 600;
     line-height: 1.29;
     transition: color var(--trns-fast);
+}
+
+.footer-contact {
+    font-style: normal;
+}
+
+.footer-nav-list {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .footer-sotial-list {
@@ -124,7 +108,6 @@
 }
 
 .rights-reserved {
-    margin-top: 0;
     margin-bottom: 14px;
 }
 
@@ -144,9 +127,7 @@
 .footer-nav-item:focus {
     color: var(--green);
 }
-.tos-text {
-    margin-bottom: 0;
-}
+
 @media only screen and (min-width: 768px) {
     .footer-section {
         padding-top: 32px;
