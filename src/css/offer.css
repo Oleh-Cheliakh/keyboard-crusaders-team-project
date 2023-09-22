@@ -8,34 +8,39 @@
     padding: 40px 20px 64px;
     width: 100%;
     margin-bottom: 150px;
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .offer-section {
         padding: 64px 32px 92px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        padding: 64px 64px 142px;
-
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .offer-section {
+        padding: 64px 64px 142px;
+    }
+}
 
 .offer-title {
-
     color: var(--white);
     font-size: 38px;
     line-height: 1.05;
     width: 100%;
     margin-bottom: 65px;
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .offer-title {
         max-width: 768px;
         line-height: 1.17;
         font-size: 60px;
         margin-bottom: 83px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .offer-title {
         max-width: 768px;
         line-height: 1.17;
         font-size: 60px;
@@ -56,21 +61,24 @@
     border-radius: 30px;
     padding: 40px 20px;
 
-    @media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) {
+    .offer-section .offer-wrapper {
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        max-width: 1152px;
-        padding-left: 64px;
-        padding-right: 64px;
-
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .offer-section .offer-wrapper {
+        max-width: 1152px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
 
 .offer-section .offer-wrapper::before,
 .offer-section .offer-wrapper::after {
@@ -107,18 +115,20 @@
     letter-spacing: 0.02em;
     padding-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+    .offer-subtitle {
         font-size: 40px;
         padding-bottom: 42px;
         padding-left: 0;
-
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .offer-subtitle {
         font-size: 40px;
         padding-bottom: 42px;
-
-
     }
 }
 
@@ -128,16 +138,19 @@
     align-items: flex-start;
     gap: 16px;
     padding-bottom: 39px;
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .offer-list {
         padding-left: 0;
         max-width: 450px;
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .offer-list {
         max-width: 700px;
     }
-
 }
 
 .offer-list-item {
@@ -147,20 +160,20 @@
     font-weight: 700;
     line-height: 1.43;
     letter-spacing: 0.02em;
+}
 
-
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .offer-list-item {
         font-size: 20px;
         line-height: 1.2;
-
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .offer-list-item {
         font-size: 20px;
         line-height: 1.2;
-
     }
-
 }
 
 .offer-container-icon {
@@ -184,18 +197,20 @@
     top: 50%;
     transform: translateY(-50%);
     right: -70px;
+}
 
-
-    @media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
+    .offer-img {
         display: none;
     }
+}
 
-    @media screen and (min-width: 768px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .offer-img {
         right: -90px;
         top: 70%;
     }
 }
-
 
 .offer-container-link {
     display: flex;
@@ -210,17 +225,20 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 1.71;
+}
 
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .offer-container-link {
         display: inline-flex;
         padding: 16px 64px;
         width: auto;
         font-size: 18px;
         line-height: 1.56;
-
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .offer-container-link {
         display: inline-flex;
         padding: 16px 64px;
         width: auto;
