@@ -1,4 +1,4 @@
-.reviews{
+.reviews {
   display: flex;
   width: 100%;
   margin: 0 auto;
@@ -17,13 +17,13 @@
   }
 }
 
-.reviews-list{
+.reviews-list {
   display: flex;
   gap: 32px;
   justify-content: space-between;
 }
 
-.reviews-list-item{
+.reviews-list-item {
   display: none;
   width: 100%;
   min-height: 278px;
@@ -33,7 +33,7 @@
   background: var(--gray);
 }
 
-.reviews-item-student-wrapper{
+.reviews-item-student-wrapper {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -42,20 +42,21 @@
   background: var(--green);
 }
 
-.reviews-item-student-name{
+.reviews-item-student-name {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
   color: var(--white);
 }
 
-.reviews-item-student-status{
+.reviews-item-student-status {
   font-size: 12px;
   line-height: 1.3;
-  color: var(--white); opacity: 0.5;
+  color: var(--white);
+  opacity: 0.5;
 }
 
-.reviews-item-student-feedback{
+.reviews-item-student-feedback {
   color: var(--light-gray);
   font-size: 14px;
   line-height: 1.71;
@@ -78,7 +79,7 @@
     width: calc((100% - 32px) / 2);
   }
 
-  .reviews-item-student-feedback{
+  .reviews-item-student-feedback {
     padding: 32px 16px 8px 16px;
     font-size: 16px;
     line-height: 1.5;
