@@ -1,5 +1,5 @@
 .form-section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .form-section .form-col {
@@ -171,7 +171,7 @@
 
 @media (min-width: 768px) {
   .form-section {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .form-section-list {
@@ -219,7 +219,7 @@
 
 @media (min-width: 1280px) {
   .form-section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 
   .form-section .form-col {
