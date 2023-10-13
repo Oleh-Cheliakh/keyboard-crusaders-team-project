@@ -16,6 +16,10 @@ body {
   margin-right: auto;
 }
 
+.policy-container {
+  padding-top: 64px;
+}
+
 .section-title {
   text-align: center;
   font-size: 32px;
@@ -32,6 +36,10 @@ p.section-text {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
+}
+
+p.policy-text {
+  text-align: left;
 }
 
 /* Highlighted title */
